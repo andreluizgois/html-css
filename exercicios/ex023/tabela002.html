@@ -10,6 +10,7 @@
             font-family: 'Courier New', Courier, monospace;
          }
          table{
+            position: relative;
             width: 500px;
             height: 20px;
             border-collapse: collapse;
@@ -19,6 +20,12 @@
             border: 2px solid black;
             padding: 10px;
          }
+         thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
+         }
+
          thead,tfoot{
            background-color: gray; 
            color: rgb(255, 255, 255);
@@ -32,9 +39,20 @@
             border: 1px solid black;
             
          }
-         tbody > tr > td.num{
-            background-color: antiquewhite;
+         tbody > tr:nth-child(2n){
+            background-color: lightgray;
+            
          }
+
+         tbody > tr:nth-child(odd){
+            background-color: red;
+
+         }
+         tbody > tr:nth-child(even){
+            background-color: lightgray;
+
+         }
+         
          td.num{
             text-align: right;
          }
@@ -183,6 +201,7 @@
 
 
     </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic accusantium, numquam cumque, soluta consequatur id amet repudiandae architecto veritatis corrupti blanditiis debitis, quasi dicta quidem est ut explicabo alias. Explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam porro quam eaque unde suscipit iste, eum accusamus voluptate iure neque odit ipsam quo ipsum. Facilis nesciunt eaque eveniet nisi aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ex voluptate architecto! Provident, laborum ex autem adipisci neque fugiat id perferendis, magni aliquam exercitationem suscipit cum, quia eos maiores vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nostrum assumenda! Explicabo perspiciatis dolor exercitationem atque ut commodi nesciunt. Delectus totam magni debitis dignissimos voluptatibus suscipit veritatis eaque commodi sunt.</p>    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic accusantium, numquam cumque, soluta consequatur id amet repudiandae architecto veritatis corrupti blanditiis debitis, quasi dicta quidem est ut explicabo alias. Explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam porro quam eaque unde suscipit iste, eum accusamus voluptate iure neque odit ipsam quo ipsum. Facilis nesciunt eaque eveniet nisi aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ex voluptate architecto! Provident, laborum ex autem adipisci neque fugiat id perferendis, magni aliquam exercitationem suscipit cum, quia eos maiores vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nostrum assumenda! Explicabo perspiciatis dolor exercitationem atque ut commodi nesciunt. Delectus totam magni debitis dignissimos voluptatibus suscipit veritatis eaque commodi sunt.</p>    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic accusantium, numquam cumque, soluta consequatur id amet repudiandae architecto veritatis corrupti blanditiis debitis, quasi dicta quidem est ut explicabo alias. Explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam porro quam eaque unde suscipit iste, eum accusamus voluptate iure neque odit ipsam quo ipsum. Facilis nesciunt eaque eveniet nisi aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ex voluptate architecto! Provident, laborum ex autem adipisci neque fugiat id perferendis, magni aliquam exercitationem suscipit cum, quia eos maiores vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nostrum assumenda! Explicabo perspiciatis dolor exercitationem atque ut commodi nesciunt. Delectus totam magni debitis dignissimos voluptatibus suscipit veritatis eaque commodi sunt.</p>    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic accusantium, numquam cumque, soluta consequatur id amet repudiandae architecto veritatis corrupti blanditiis debitis, quasi dicta quidem est ut explicabo alias. Explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam porro quam eaque unde suscipit iste, eum accusamus voluptate iure neque odit ipsam quo ipsum. Facilis nesciunt eaque eveniet nisi aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ex voluptate architecto! Provident, laborum ex autem adipisci neque fugiat id perferendis, magni aliquam exercitationem suscipit cum, quia eos maiores vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nostrum assumenda! Explicabo perspiciatis dolor exercitationem atque ut commodi nesciunt. Delectus totam magni debitis dignissimos voluptatibus suscipit veritatis eaque commodi sunt.</p>    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic accusantium, numquam cumque, soluta consequatur id amet repudiandae architecto veritatis corrupti blanditiis debitis, quasi dicta quidem est ut explicabo alias. Explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam porro quam eaque unde suscipit iste, eum accusamus voluptate iure neque odit ipsam quo ipsum. Facilis nesciunt eaque eveniet nisi aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ex voluptate architecto! Provident, laborum ex autem adipisci neque fugiat id perferendis, magni aliquam exercitationem suscipit cum, quia eos maiores vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, nostrum assumenda! Explicabo perspiciatis dolor exercitationem atque ut commodi nesciunt. Delectus totam magni debitis dignissimos voluptatibus suscipit veritatis eaque commodi sunt.</p>
     
 </body>
 </html>
