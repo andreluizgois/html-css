@@ -61,6 +61,7 @@ section{
 }
 section > p{
     padding-bottom: 2em;
+    text-shadow: 0.5px 0.5px 2px black;
 }
 section.normal{
     background-color: white;
@@ -70,7 +71,7 @@ section.normal{
 section.imagem{
     background-color: rgba(32, 32, 32, 0.322);
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.534);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.354);
     background-size: cover;
 
    /* fixando a imagem */
@@ -83,15 +84,19 @@ section.imagem > p{
 
     background-color: rgba(0, 0, 0, 0.514);
     text-shadow: 2px 2px 0px black;
+    border-radius: 6px 6px;
 }
 section#img01{
     background-image: url('../imagens/background001.jpg');
     background-position: right center;
     
+
+    
     
 }
 section#img02{
     background-image: url('../imagens/background002.jpg');
+   
     
 
 }
