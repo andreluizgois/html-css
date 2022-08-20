@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br";>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do iFrame</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+
+        }
+        audio::-webkit-media-controls-timeline {display: none;};
+
+        audio {
+             width: 10px;
+             height: 50px;
+        }
+
+    ::-webkit-media-controls {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    display: flex !important;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Radio Inconfidentes</h1>
+
+ 
+
+    <audio autoplay controls="controls" src="https://server10.srvsh.com.br:8444/stream//"></audio>
+
+    <h1>Faça uma escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi laborum dignissimos praesentium delectus harum cumque rerum ipsum laudantium, impedit nam aperiam distinctio, repellat nemo, quas dolore iure vel molestiae cum.</p>
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira pagina</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda pagina</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira pagina</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore excepturi commodi placeat doloremque? Quo incidunt repellendus quos, quisquam ullam laborum magni neque pariatur autem eligendi ipsam quam optio, tempore doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio beatae recusandae, at, velit earum consequatur iusto omnis quod nisi provident eius perspiciatis nesciunt? Debitis ea quidem, placeat explicabo saepe voluptas?</p>
+
+    <iframe  id="tela" name="frame" srcdoc="<h1>Escolha uma opcao </h1> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam id tempore minima quibusdam, non cupiditate cumque enim eum sunt magni commodi aut, quam odio necessitatibus illum quo consectetur deserunt qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum  </P>
+        " >
+        <p>Infelizmente seu navegador nao é compativel com isso</p>
+
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam id tempore minima quibusdam, non cupiditate cumque enim eum sunt magni commodi aut, quam odio necessitatibus illum quo consectetur deserunt qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quo saepe vel officiis quisquam mollitia odio recusandae soluta! Deserunt totam id ea aperiam sunt saepe, nam rerum aliquam. Harum, quibusdam.</p>
+
+</body>
+</html>
