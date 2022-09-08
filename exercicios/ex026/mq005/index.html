@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="estilos/style.css">
-</head>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
 
+</head>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
-        <span id="burguer" class="material-icons" onclick="clicMenu()">menu</span>
+        <i id="burguer" class="material-icons" onclick="clicMenu()">menu</i>
 
-        <menu id="menuburguer">
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opcão 1</a></li>
                 <li><a href="#">Opcão 2</a></li>
@@ -31,14 +33,26 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque error, architecto magnam odio magni nesciunt vero eum fugit, asperiores commodi temporibus voluptatibus libero id totam fugiat ut repellat vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magnam? Fugit consectetur quisquam, aut molestias accusamus architecto, vitae quas nesciunt distinctio debitis libero nihil! Cupiditate illum vero impedit facere vitae.</p>            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque error, architecto magnam odio magni nesciunt vero eum fugit, asperiores commodi temporibus voluptatibus libero id totam fugiat ut repellat vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magnam? Fugit consectetur quisquam, aut molestias accusamus architecto, vitae quas nesciunt distinctio debitis libero nihil! Cupiditate illum vero impedit facere vitae.</p>            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque error, architecto magnam odio magni nesciunt vero eum fugit, asperiores commodi temporibus voluptatibus libero id totam fugiat ut repellat vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magnam? Fugit consectetur quisquam, aut molestias accusamus architecto, vitae quas nesciunt distinctio debitis libero nihil! Cupiditate illum vero impedit facere vitae.</p>            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque error, architecto magnam odio magni nesciunt vero eum fugit, asperiores commodi temporibus voluptatibus libero id totam fugiat ut repellat vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magnam? Fugit consectetur quisquam, aut molestias accusamus architecto, vitae quas nesciunt distinctio debitis libero nihil! Cupiditate illum vero impedit facere vitae.</p>            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque error, architecto magnam odio magni nesciunt vero eum fugit, asperiores commodi temporibus voluptatibus libero id totam fugiat ut repellat vitae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, magnam? Fugit consectetur quisquam, aut molestias accusamus architecto, vitae quas nesciunt distinctio debitis libero nihil! Cupiditate illum vero impedit facere vitae.</p>
         </article>
     </main>
+
     <script>
         function clicMenu(){
 
-            if (menuburguer.style.display == 'block'){
-              menuburguer.style.display = 'none'; 
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'; 
             }else{
-            menuburguer.style.display = 'block'; 
+                itens.style.display = 'block'; 
             }
+
+        }
+        function mudouTamanho(){
+
+           if (window.innerWidth >= 768){
+               itens.style.display='block' ;
+           }
+           else{
+                itens.style.display='none' ;
+           }
+
 
         }
 
