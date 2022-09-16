@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br";>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Novo</title>
+</head>
+<body>
+
+    <div class="container">
+        <section class="grid grid-template-areas">
+            <input disabled class="display">
+            <button class="item clear button-operation">AC</button>
+            <button class="item plus-minus button-operation">+/-</button>
+            <button class="item percent button-operation">%</button>
+            <button class="item division button-operation-rigth ">÷</button>
+
+            <button class="item seven button-numbers">7</button>
+            <button class="item eight button-numbers">8</button>
+            <button class="item nine button-numbers">9</button>
+            <button class="item multiplication button-operation-rigth">X</button>
+
+            <button class="item four button-numbers">4</button>
+            <button class="item five button-numbers">5</button>
+            <button class="item six button-numbers">6</button>
+            <button class="item minus button-operation-rigth">X</button>
+
+            <button class="item one button-numbers">1</button>
+            <button class="item two button-numbers">2</button>
+            <button class="item three button-numbers">3</button>
+            <button class="item plus button-operation-rigth">+</button>
+
+            <button class="item zero button-numbers">0</button>
+            <button class="item point button-numbers">,</button>
+            <button class="item equal button-operation-rigth">=</button>
+
+
+        </section>
+
+    </div>
+
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:  Helvetica, sans-serif;
+    }
+
+    .container{
+        background: linear-gradient(#686A6C,#f1A23D);
+        width: 100vw;
+        height: 100vh;   
+        
+
+        /* alinhamento ao centro */
+        display: grid;
+        justify-content: center;
+        align-content: center;
+       /* --------------------- */
+
+    }
+
+    .grid{
+        display: grid;
+        height: 480px;
+        width: 320px;
+
+    }
+    .item{
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+
+        outline: none;
+        border: 0.5px solid black;
+    }
+    .item:hover{
+        opacity: 0.7;
+
+    }
+    .item:active{  /*quando clicar no item  */
+        background-color: white;
+        opacity: 0.3;
+        color: #4a494f;
+
+
+
+    }
+    .button-operation-rigth{
+        background-color: #f1A23D;
+
+    }
+    .button-numbers{
+        background-color: #75757D;
+
+    }
+    .button-operation{
+        background-color: #5A5663;
+
+    }
+
+    .display         {
+        grid-area: display;
+        background-color: #4a494f;
+        opacity: 0.7;
+        border: none;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    
+    
+    }
+    .clear          { grid-area:clear;}     
+    .plus-minus     { grid-area:plus-minus;}      
+    .percent        { grid-area:percent;}     
+    .division       { grid-area:division;} 
+    .multiplication {grid-area: multiplication;}   
+    .seven          { grid-area:seven;}     
+    .eight          { grid-area:eight;}     
+    .nine           { grid-area:nine;}
+    .four { grid-area:four;}
+    .five { grid-area:five;}
+    .six { grid-area:six;}
+    .minus { grid-area:minus;}
+    .one { grid-area:one;}
+    .two { grid-area:two;}
+    .three { grid-area:three;}
+    .plus { grid-area:plus;}
+    .zero { grid-area:zero;}
+    .point{ grid-area:point;}
+    .equal { grid-area:equal;}
+
+
+    section{
+        grid-template-areas: 
+        "display display display display"
+        "clear plus-minus percent division"
+        "seven eight nine multiplication"
+        "four five six minus"
+        "one two three plus"
+        "zero zero point equal"
+        ;
+
+
+    }
+
+
+
+</style>
+
+
+
+
+</html>
